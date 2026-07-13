@@ -20,10 +20,25 @@ A Microsoft Edge extension that allows you to rename browser tabs with custom na
 
 ## Usage
 
-1. Click the extension icon in your browser toolbar
-2. Enter a custom name for the current tab
-3. Click "Rename Tab" to apply the new name
-4. Click "Reset" to restore the original title
+### Rename A Tab
+
+- Option 1:
+
+   1. Right Click a tab and select "Rename Tab"
+   2. Enter a custom name for the tab
+
+- Option 2:
+
+   1. Ensure the tab that you wish to rename is focused
+   2. Click the extension icon in your browser toolbar
+   3. Enter a custom name for the tab
+   4. Click "Rename Tab" to apply the new name
+
+### Reset A Tab Name
+
+1. Ensure the tab whose name you wish to clear is focused
+2. Click the extension icon in your browser toolbar
+3. Click "Reset" to restore the original title
 
 ## How It Works
 
