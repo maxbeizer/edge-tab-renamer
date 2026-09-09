@@ -87,14 +87,14 @@ function enforceCustomTitle(title) {
 
   const observer = new MutationObserver(apply);
 
-  // Watch the <title> element's text for changes.
-  const titleEl = document.querySelector('title');
-  if (titleEl) {
-    observer.observe(titleEl, { childList: true, characterData: true, subtree: true });
-  }
-  // Watch <head> so we catch the <title> element being replaced entirely.
+  // Watch the entire <head> subtree so title text changes and replacement
+  // <title> elements continue to be observed.
   if (document.head) {
-    observer.observe(document.head, { childList: true });
+    observer.observe(document.head, {
+      childList: true,
+      characterData: true,
+      subtree: true
+    });
   }
 
   window.__tabRenamerObserver = observer;
